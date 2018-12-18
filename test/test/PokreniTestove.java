@@ -12,6 +12,7 @@ import org.junit.runner.notification.Failure;
 
 import popis.DomacinstvoTest;
 import popis.PopisDomacinstavaTest;
+import popis.izuzeci.StatistikaExceptionTest;
 
 /**
  * This class executes all tests and prints out the report.
@@ -20,6 +21,7 @@ import popis.PopisDomacinstavaTest;
 public class PokreniTestove {
 
 	public static void main(String[] args) {
+		runTestsForClass(StatistikaExceptionTest.class);
 		runTestsForClass(DomacinstvoTest.class);
 		runTestsForClass(PopisDomacinstavaTest.class);
 	}

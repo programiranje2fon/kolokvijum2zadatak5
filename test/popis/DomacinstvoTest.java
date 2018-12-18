@@ -1,6 +1,7 @@
 package popis;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertTrue;
 
@@ -153,6 +154,11 @@ public class DomacinstvoTest {
 	}
 	
 	@Test
+	public void metoda_equals_nijeDobraKlasa() {
+		assertFalse("Metoda equals() ne vraca false ako se prosledi objekat druge klase.", instance.equals(new Object()));
+	}
+	
+	@Test
 	public void metoda_equals_isti() {
 		instance.setMesto("Kragujevac");
 		instance.setBrojOdraslih(2);
@@ -169,7 +175,7 @@ public class DomacinstvoTest {
 	}
 	
 	@Test
-	public void metoda_equals_razliciti() {
+	public void metoda_equals_razlicitoMesto() {
 		instance.setMesto("Kragujevac");
 		instance.setBrojOdraslih(2);
 		instance.setBrojDece(2);
@@ -181,6 +187,57 @@ public class DomacinstvoTest {
 		d1.setBrojDece(2);
 		d1.setMesecnaPrimanja(100000);
 		
-		assertNotEquals("Metoda equals() ne vraca vrednost false za prosledjeno domacinstvo sa razlicitim mestom", d1, instance);
+		assertNotEquals("Metoda equals() ne vraca vrednost false za prosledjeno domacinstvo sa razlicitim mestom.", d1, instance);
+	}
+	
+	
+	@Test
+	public void metoda_equals_razlicitBrojOdraslih() {
+		instance.setMesto("Kragujevac");
+		instance.setBrojOdraslih(2);
+		instance.setBrojDece(2);
+		instance.setMesecnaPrimanja(100000);
+		
+		Domacinstvo d1 = new Domacinstvo();
+		d1.setMesto("Kragujevac");
+		d1.setBrojOdraslih(1);
+		d1.setBrojDece(2);
+		d1.setMesecnaPrimanja(100000);
+		
+		assertNotEquals("Metoda equals() ne vraca vrednost false za prosledjeno domacinstvo sa razlicitim brojem odraslih.", d1, instance);
+	}
+	
+	
+	@Test
+	public void metoda_equals_razlicitBrojDece() {
+		instance.setMesto("Kragujevac");
+		instance.setBrojOdraslih(2);
+		instance.setBrojDece(2);
+		instance.setMesecnaPrimanja(100000);
+		
+		Domacinstvo d1 = new Domacinstvo();
+		d1.setMesto("Kragujevac");
+		d1.setBrojOdraslih(2);
+		d1.setBrojDece(3);
+		d1.setMesecnaPrimanja(100000);
+		
+		assertNotEquals("Metoda equals() ne vraca vrednost false za prosledjeno domacinstvo sa razlicitim brojem dece.", d1, instance);
+	}
+	
+	
+	@Test
+	public void metoda_equals_razlicitaMesecnaPrimanja() {
+		instance.setMesto("Kragujevac");
+		instance.setBrojOdraslih(2);
+		instance.setBrojDece(2);
+		instance.setMesecnaPrimanja(100000);
+		
+		Domacinstvo d1 = new Domacinstvo();
+		d1.setMesto("Kragujevac");
+		d1.setBrojOdraslih(2);
+		d1.setBrojDece(2);
+		d1.setMesecnaPrimanja(90000);
+		
+		assertNotEquals("Metoda equals() ne vraca vrednost false za prosledjeno domacinstvo sa razlicitim mesecnim primanjima.", d1, instance);
 	}
 }

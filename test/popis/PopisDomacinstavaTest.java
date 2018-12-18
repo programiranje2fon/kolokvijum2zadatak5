@@ -55,7 +55,7 @@ public class PopisDomacinstavaTest {
 		assertTrue("Atribut domacinstva nije privatan", TestUtil.hasFieldModifier(PopisDomacinstava.class, "domacinstva", Modifier.PRIVATE));
 	}
 	
-	@Test(timeout = 2000)
+	@Test
 	public void konstruktor_PopisDomacinstava() {
 		instance = new PopisDomacinstava();
 		
