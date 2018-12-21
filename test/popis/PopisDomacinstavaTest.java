@@ -233,7 +233,7 @@ public class PopisDomacinstavaTest {
 		assertEquals("Kada se na tastaturi unose podaci o tri domacinstva i dva puta se pogresi unos za isto domacinstvo, a jednom se uspesno obavi, lista domacinstva nema 1 element.", 1, domacinstva.size());
 	}
 
-	public static String ucitajIVratiTekst(String imeFajla) throws IOException {
+	private static String ucitajIVratiTekst(String imeFajla) throws IOException {
 		BufferedReader in = new BufferedReader(new FileReader(imeFajla));
 		boolean kraj = false;
 		String s = "";
