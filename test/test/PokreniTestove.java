@@ -10,6 +10,7 @@ import org.junit.runner.JUnitCore;
 import org.junit.runner.Result;
 import org.junit.runner.notification.Failure;
 
+import ispravka_koda.UpisivanjeUTXTFajlTest;
 import popis.DomacinstvoTest;
 import popis.PopisDomacinstavaTest;
 import popis.izuzeci.StatistikaExceptionTest;
@@ -24,6 +25,7 @@ public class PokreniTestove {
 		runTestsForClass(StatistikaExceptionTest.class);
 		runTestsForClass(DomacinstvoTest.class);
 		runTestsForClass(PopisDomacinstavaTest.class);
+		runTestsForClass(UpisivanjeUTXTFajlTest.class);
 	}
 
 	/**
