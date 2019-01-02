@@ -12,7 +12,7 @@ Napraviti javnu klasu **Domacinstvo** u paketu **popis** koja može da bude seri
 - Privatni atribut **mesečnaPrimanja** koji predstavlja iznos mesečnih primanja cele porodice u dinarima.
 - Odgovarajuće javne **get i set metode** za ove atribute. Nedozvoljena vrednost za atribut mesto je null String i svaki String kraći od 5 znakova ili duži od 13 znakova, a ostali atributi moraju biti nula ili veći od nule. U slučaju unosa nedozvoljenih vrednosti, baciti izuzetak klase RuntimeException sa odgovarajućom porukom.
 - Redefinisanu **toString** metodu klase Object koja vraća String sa svim podacima o Domaćinstvu uz odgovarajuću poruku, ali da se posle svakog atributa upiše u String i znak "tab“.
-- Redefinisanu **equals** metodu klase Object. Metoda prvo proverava da li je uneti objekat klase **Domacinstvo**, pa ako nije baca izuzetak klase **StatistikaException**. Metoda vraća true ako su vrednosti svih atributa jednaki vrednostima odgovarajućih atributa unetog domaćinstva, a inače false.
+- Redefinisanu **equals** metodu klase Object. Metoda prvo proverava da li je uneti objekat klase **Domacinstvo**, pa ako nije, metoda vraća false. Metoda vraća true ako su vrednosti svih atributa jednaki vrednostima odgovarajućih atributa unetog domaćinstva, a inače false.
 
 Napraviti javnu klasu **PopisDomacinstava** u paketu **popis** koja ima:
 - Privatni atribut **domacinstva** koji predstavlja listu objekata klase **Domacinstvo**.
