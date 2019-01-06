@@ -69,7 +69,7 @@ public class PopisDomacinstava {
 		}
 	}
 	
-	public void unesiDomacinstva() {
+	public void ucitajDomacinstvaSaTastature() {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		try {
 			System.out.print("Unesite broj domacinstava: ");

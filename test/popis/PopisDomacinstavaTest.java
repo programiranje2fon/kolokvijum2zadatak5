@@ -160,7 +160,7 @@ public class PopisDomacinstavaTest {
 	}
 	
 	@Test
-	public void metoda_unesiDomacinstva() {
+	public void metoda_ucitajDomacinstvaSaTastature() {
 		StringBuffer buffer = new StringBuffer();
 		
 		buffer.append("3\n");
@@ -172,7 +172,7 @@ public class PopisDomacinstavaTest {
 		ByteArrayInputStream in = new ByteArrayInputStream(buffer.toString().getBytes());
 		System.setIn(in);
 				
-		instance.unesiDomacinstva();
+		instance.ucitajDomacinstvaSaTastature();
 		
 		@SuppressWarnings("unchecked")
 		List<Domacinstvo> domacinstva = (List<Domacinstvo>) TestUtil.getFieldValue(instance, "domacinstva");
@@ -181,7 +181,7 @@ public class PopisDomacinstavaTest {
 	}
 	
 	@Test
-	public void metoda_unesiDomacinstva_saJednomGreskom() {
+	public void metoda_ucitajDomacinstvaSaTastature_saJednomGreskom() {
 		StringBuffer buffer = new StringBuffer();
 		
 		buffer.append("3\n");
@@ -199,7 +199,7 @@ public class PopisDomacinstavaTest {
 		ByteArrayInputStream in = new ByteArrayInputStream(buffer.toString().getBytes());
 		System.setIn(in);
 		
-		instance.unesiDomacinstva();
+		instance.ucitajDomacinstvaSaTastature();
 		
 		@SuppressWarnings("unchecked")
 		List<Domacinstvo> domacinstva = (List<Domacinstvo>) TestUtil.getFieldValue(instance, "domacinstva");
@@ -208,7 +208,7 @@ public class PopisDomacinstavaTest {
 	}
 	
 	@Test
-	public void metoda_unesiDomacinstva_saDveGreske() {
+	public void metoda_ucitajDomacinstvaSaTastature_saDveGreske() {
 		StringBuffer buffer = new StringBuffer();
 		
 		buffer.append("3\n");
@@ -225,7 +225,7 @@ public class PopisDomacinstavaTest {
 		ByteArrayInputStream in = new ByteArrayInputStream(buffer.toString().getBytes());
 		System.setIn(in);
 		
-		instance.unesiDomacinstva();
+		instance.ucitajDomacinstvaSaTastature();
 		
 		@SuppressWarnings("unchecked")
 		List<Domacinstvo> domacinstva = (List<Domacinstvo>) TestUtil.getFieldValue(instance, "domacinstva");
