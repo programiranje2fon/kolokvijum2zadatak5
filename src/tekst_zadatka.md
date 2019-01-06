@@ -17,8 +17,8 @@ Napraviti javnu klasu **Domacinstvo** u paketu **popis** koja može da bude seri
 Napraviti javnu klasu **PopisDomacinstava** u paketu **popis** koja ima:
 - Privatni atribut **domacinstva** koji predstavlja listu objekata klase **Domacinstvo**.
 - Javni **konstruktor** bez argumenata koji inicijalizuje listu.
-- Javnu metodu **upisiDomacinstvaBezPrihoda** koja u tekstualni fajl "domacinstva\_bez\_prihoda.txt" upisuje samo podatke o onim domaćinstvima u kojima je iznos mesečnih primanja nula i to u formatu &lt;mesto&gt;#&lt;broj odraslih&gt;#&lt;broj dece&gt;. Ako je lista prazna, baciti izuzetak klase **StatistikaException**.
-- Javnu metodu koja na osnovu podataka iz liste domaćinstava sastavlja izveštaj i upisuje ga u fajl "izvestaj.txt". U njemu treba da se nađe u posebnim redovima: ukupan broj domaćinstava, prosečan iznos mesečnih primanja po domaćinstvu, prosečan broj odraslih po domaćinstvu, prosečan broj dece po domaćinstvu i prosečan iznos mesečnih primanja po članu domaćinstva (računaju se i odrasli članovi i deca).
+- Javnu metodu **upisiDomacinstvaBezPrimanja** koja u tekstualni fajl "domacinstva\_bez\_prihoda.txt" upisuje samo podatke o onim domaćinstvima u kojima je iznos mesečnih primanja nula i to u formatu &lt;mesto&gt;#&lt;broj odraslih&gt;#&lt;broj dece&gt;. Ako je lista prazna, baciti izuzetak klase **StatistikaException**.
+- Javnu metodu **statistikaDomacinstava** koja na osnovu podataka iz liste domaćinstava sastavlja izveštaj i upisuje ga u fajl "izvestaj.txt". U njemu treba da se nađe u posebnim redovima: ukupan broj domaćinstava, prosečan iznos mesečnih primanja po domaćinstvu, prosečan broj odraslih po domaćinstvu, prosečan broj dece po domaćinstvu i prosečan iznos mesečnih primanja po članu domaćinstva (računaju se i odrasli članovi i deca).
 - Javnu metodu **ucitajDomacinstvaSaTastature** koja sa tastature učitava podatke o nekoliko domaćinstava i unosi ih u listu. Broj domaćinstava se unosi na početku. U slučaju pojavljivanja izuzetka pri unosu za neko domaćinstvo, uhvatiti izuzetak, ispisati njegovu poruku i pokušati još jednom unos sa tastature za to domaćinstvo.
 
 # Zadatak 2 (ispravka koda)
